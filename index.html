@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sami Ounalli - Ingénieur Développement Web Sénior</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+
+        /* Fix pour le défilement du menu */
+        section { scroll-margin-top: 5rem; }
+
+        .logo-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.5rem;
+            width: 100px;
+            height: 50px;
+            font-size: 0.65rem;
+            color: #64748b;
+            text-align: center;
+            padding: 4px;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+        .logo-placeholder img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        .avatar-placeholder {
+            width: 120px;
+            height: 120px;
+            background-color: #f1f5f9;
+            border: 4px solid white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #94a3b8;
+            margin: 0 auto 1.5rem;
+            overflow: hidden;
+        }
+        .experience-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .experience-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+<!-- Navigation -->
+
+<!-- Hero Section -->
+<section id="accueil" class="pt-32 pb-16 px-4">
+    <div class="max-w-7xl mx-auto text-center">
+        <!-- Avatar Placeholder -->
+        <div class="avatar-placeholder">
+            <img src="https://image.cdn2.seaart.me/upload/static/20260210/c9115ff44e6fbc1497ed4c566cb8eeae_high.webp" class="w-full h-full object-cover">
+        </div>
+
+        <div class="inline-block px-4 py-1.5 mb-4 text-sm font-semibold tracking-wide text-indigo-600 uppercase bg-indigo-50 rounded-full">
+            16 ans d'expertise technique
+        </div>
+        <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
+            Sami <span class="text-indigo-600">Ounalli</span>
+        </h1>
+        <p class="text-2xl font-medium text-slate-700 mb-4 italic">Ingénieur Développement Web Sénior</p>
+        <p class="text-lg text-slate-600 mb-8 max-w-3xl mx-auto">
+            Expert PHP (Symfony, Phalcon, frameworks maison...), spécialisé dans la migration, la conception et l'optimisation d'applications web évolutives et maintenables.
+        </p>
+        <div class="flex flex-wrap justify-center gap-6 text-slate-600 mb-12">
+            <div class="flex items-center space-x-2">
+                <i data-lucide="mail" class="w-5 h-5 text-indigo-500"></i>
+                <span>sami.ounalli@gmail.com</span>
+            </div>
+            <div class="flex items-center space-x-2">
+                <i data-lucide="phone" class="w-5 h-5 text-indigo-500"></i>
+                <span>06 35 67 57 03</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Competences -->
+<section id="competences" class="py-16 bg-white border-y border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-12">Domaines d'expertise</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div>
+                <div class="font-bold text-indigo-600 mb-2">Langages & Scripts</div>
+                <p class="text-sm text-slate-500">PHP 7/8, Phalcon 3/4/5, Symfony 3 à 7, React, Angular</p>
+            </div>
+            <div>
+                <div class="font-bold text-indigo-600 mb-2">Search & Data</div>
+                <p class="text-sm text-slate-500">ElasticSearch, Solr, OpenSearch, PostgreSQL, MySQL, MongoDB</p>
+            </div>
+            <div>
+                <div class="font-bold text-indigo-600 mb-2">DevOps & Cloud</div>
+                <p class="text-sm text-slate-500">AWS, Docker, GitlabCI, ArgoCD, Jenkins, Bambo, Linux</p>
+            </div>
+            <div>
+                <div class="font-bold text-indigo-600 mb-2">Méthodologie</div>
+                <p class="text-sm text-slate-500">Agile (Scrum, Kanban), Architecture DDD, Micro-services</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience -->
+<section id="experience" class="py-20 px-4 bg-slate-50">
+    <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold mb-16 text-center">Parcours Professionnel</h2>
+
+        <div class="space-y-10">
+
+            <!-- Socianova -->
+            <div class="experience-card bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-6 gap-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="logo-placeholder">
+                            <img src="https://www.socianova.com/wp-content/uploads/2021/07/Logo-SociaNova-HD.png">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Socianova</h3>
+                            <p class="text-indigo-600 font-semibold italic">Depuis Nov 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="font-bold text-slate-800 mb-2 italic">Projet OGIRYS (DUI)</h4>
+                <p class="text-slate-600 text-sm mb-4">Développement des évolutions de l'application dédiée au secteur médico-social.</p>
+                <ul class="grid md:grid-cols-2 gap-2 text-sm text-slate-600 mb-4">
+                    <li class="flex items-start"><i data-lucide="check" class="w-4 h-4 mr-2 text-emerald-500"></i> Migration vers architecture DDD (Symfony 7)</li>
+                    <li class="flex items-start"><i data-lucide="check" class="w-4 h-4 mr-2 text-emerald-500"></i> Interfaces dynamiques en Angular</li>
+                    <li class="flex items-start"><i data-lucide="check" class="w-4 h-4 mr-2 text-emerald-500"></i> Collaboration équipes fonctionnelles</li>
+                </ul>
+                <p class="text-xs font-semibold text-slate-400">Environnement : PHP, Symfony 7, API Platform, Angular, Architecture DDD, Git, Github-copilot AI</p>
+            </div>
+
+            <!-- Télérama -->
+            <div class="experience-card bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-6 gap-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="logo-placeholder">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/T%C3%A9l%C3%A9rama_logo.png">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Télérama</h3>
+                            <p class="text-indigo-600 font-semibold">Jan 2021 - Mai 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-bold text-sm text-slate-800">Site telerama.fr</h4>
+                        <ul class="text-sm text-slate-600 list-disc ml-5 mt-1">
+                            <li>Migration Drupal vers Phalcon 5.8</li>
+                            <li>Optimisation cache et résolution fort trafic</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-slate-800">Backend Back-o-Fiches</h4>
+                        <ul class="text-sm text-slate-600 list-disc ml-5 mt-1">
+                            <li>Mise en place projet sous Symfony 6.4 (POC, recette, prod)</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="text-xs font-semibold text-slate-400 mt-4">Environnement : PHP 8, PostgreSQL, Phalcon 5.8, Symfony 6.4, ArgoCD, Redis, ElasticSearch, OpenSearch</p>
+            </div>
+
+            <!-- Libération -->
+            <div class="experience-card bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-6 gap-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="logo-placeholder">
+                            <img src="https://www.wikiberal.org/images/4/43/Logo_Liberation.png">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Libération</h3>
+                            <p class="text-indigo-600 font-semibold">Sept 2020 - Déc 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="font-bold text-sm text-slate-800">Projet Libé Abo (Lead Développeur Backend)</h4>
+                <ul class="text-sm text-slate-600 list-disc ml-5 mt-2">
+                    <li>Intégration Autho et ARC CMS</li>
+                    <li>Développement d'APIs sous Symfony 5.1.2</li>
+                </ul>
+                <p class="text-xs font-semibold text-slate-400 mt-4">Environnement : PHP 7, PostgreSQL, Symfony 5.1.2, API Platform, React, AWS (SQS), Gitlab CI</p>
+            </div>
+
+            <!-- Fioulmarket -->
+            <div class="experience-card bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-6 gap-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="logo-placeholder">
+                            <img src="https://www.fioulmarket.fr/assets/front/images/sprite-header/logo-fioul-market-small.png">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Fioulmarket (Total)</h3>
+                            <p class="text-indigo-600 font-semibold">Jan 2019 - Mai 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-bold text-sm text-slate-800 italic">Offre groupée & Météo Fioul</h4>
+                        <ul class="text-sm text-slate-600 list-disc ml-5 mt-1">
+                            <li>Import de fichiers températures (meteo.fr) via Talend</li>
+                            <li>Calcul de coefficients de consommation complexes</li>
+                            <li>Pages géolocalisées pour stations ELAN</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="text-xs font-semibold text-slate-400 mt-4">Environnement : PHP 7, Symfony 2.8/3.8/4.2, MySQL, Talend, React, Micro-services</p>
+            </div>
+
+            <!-- France.tv -->
+            <div class="experience-card bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-6 gap-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="logo-placeholder">
+                            <img src="https://www.journeesdesmetiersdart.fr/wp-content/uploads/2022/11/france-tv.png">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">France.tv</h3>
+                            <p class="text-indigo-600 font-semibold">Nov 2016 - Juil 2018</p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="text-sm text-slate-600 list-disc ml-5 space-y-2">
+                    <li><strong>Équipe MÉTA :</strong> Import des vidéos consommées (SVOD, Web, Orange...)</li>
+                    <li><strong>Équipe Data & Marketing :</strong> Moteur Cognik, GIGYA, Newsletters</li>
+                </ul>
+                <p class="text-xs font-semibold text-slate-400 mt-4">Environnement : PHP 7, Symfony 3, MySQL, MongoDB, Docker, PHPUnit</p>
+            </div>
+
+            <!-- Universal Music -->
+            <div class="experience-card bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-6 gap-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="logo-placeholder">
+                            <img src="https://d18qs7yq39787j.cloudfront.net/uploads/company/5095/UMG_LOGO_BLACK_1_.png">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Universal Music Group</h3>
+                            <p class="text-indigo-600 font-semibold">Sept 2014 - Juil 2016</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-sm text-slate-600">Standard API, HP Lounge (streaming), Reward Store.</p>
+                <p class="text-xs font-semibold text-slate-400 mt-4">Environnement : PHP 5.6, Symfony 2.7/2.8, ElasticSearch, Solr, Behat, Git</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Sodexo -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="logo-placeholder">
+                            <img src="https://logonoid.com/images/sodexo-logo.png">
+                        </div>
+                        <h3 class="font-bold">Sodexo (Tir Groupé)</h3>
+                    </div>
+                    <p class="text-xs text-indigo-600 font-bold mb-2">Déc 2011 - Mars 2013</p>
+                    <p class="text-xs text-slate-600 italic mb-2 italic">Vente en ligne chèques cadeaux et extranet affiliés.</p>
+                    <ul class="text-[10px] text-slate-500 list-disc ml-4 space-y-1">
+                        <li>Modules : gestion commandes, clients, paiements</li>
+                        <li>Intégration Web Services & authentification sécurisée</li>
+                    </ul>
+                    <p class="text-[10px] font-bold text-slate-400 mt-3 italic">Tech: PHP 5.3, Symfony 2.0/2.2, MySQL</p>
+                </div>
+
+                <!-- Bouygues -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="logo-placeholder">
+                            <img src="https://upload.wikimedia.org/wikipedia/fr/2/2b/Bouygues_T%C3%A9l%C3%A9com.png">
+                        </div>
+                        <h3 class="font-bold">Bouygues Telecom</h3>
+                    </div>
+                    <p class="text-xs text-indigo-600 font-bold mb-2">Sept 2012 - Mai 2013</p>
+                    <p class="text-xs text-slate-600 italic mb-2 italic">Projet SI Cloud : système de facturation filiale Bytel.</p>
+                    <ul class="text-[10px] text-slate-500 list-disc ml-4 space-y-1">
+                        <li>Développement des IHM liés au billing</li>
+                        <li>Modules de générations des factures</li>
+                    </ul>
+                    <p class="text-[10px] font-bold text-slate-400 mt-3 italic">Tech: PHP 5.3, Symfony 2.1, SVN</p>
+                </div>
+            </div>
+
+            <div class="bg-slate-100 p-6 rounded-2xl border border-slate-200">
+                <div class="flex items-center space-x-4 mb-4">
+                    <div class="logo-placeholder">
+                        <img src="https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/5e4e642f40f88566ba1584d5/huge?r=s3-eu-central-1&_1731485248238">
+                    </div>
+                    <h3 class="font-bold">Talan / Oalia (Banque de France)</h3>
+                </div>
+                <p class="text-xs text-indigo-600 font-bold mb-2">2009 - 2011</p>
+                <p class="text-sm text-slate-600 italic">Développement du progiciel OSRM et applications de gestion RH / Recrutement.</p>
+                <p class="text-xs text-slate-500 font-semibold italic mt-2">Tech : Java EE, Hibernate, Oracle 10g, Spring, Struts 2</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Passions & Loisirs -->
+<section id="passions" class="py-16 bg-white border-y border-slate-100">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-12">Passions & Loisirs</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100">
+                <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                    <i data-lucide="tv"></i>
+                </div>
+                <h3 class="font-bold mb-2 text-slate-800">Divertissement</h3>
+                <p class="text-sm text-slate-600">Féru de <strong>Films et séries</strong>, ainsi que de culture <strong>Animes</strong>.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100">
+                <div class="w-12 h-12 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                    <i data-lucide="palette"></i>
+                </div>
+                <h3 class="font-bold mb-2 text-slate-800">Design</h3>
+                <p class="text-sm text-slate-600"><strong>Création graphique</strong> passionnée par la création et les montages (Photoshop, GIMP...).</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100">
+                <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                    <i data-lucide="sparkles"></i>
+                </div>
+                <h3 class="font-bold mb-2 text-slate-800">Innovation</h3>
+                <p class="text-sm text-slate-600">Exploration continue de l'<strong>IA Créative</strong> pour le design et le web (Images, Vidéos, musiques, sites statiques...).</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Formation -->
+<section id="formation" class="py-16 bg-slate-50">
+    <div class="max-w-4xl mx-auto px-4 grid md:grid-cols-2 gap-12">
+        <div>
+            <h2 class="text-3xl font-bold mb-8">Formation</h2>
+            <div class="space-y-6">
+                <div class="flex space-x-4">
+                    <div class="text-indigo-600 font-bold">2005-2009</div>
+                    <div>
+                        <h4 class="font-bold">Diplôme d'Ingénieur en Informatique</h4>
+                        <p class="text-slate-600 text-sm italic">ENSI - Tunis</p>
+                    </div>
+                </div>
+                <div class="flex space-x-4">
+                    <div class="text-indigo-600 font-bold">2003-2005</div>
+                    <div>
+                        <h4 class="font-bold">Cycle Préparatoire (MP)</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2 class="text-3xl font-bold mb-8">Langues</h2>
+            <div class="space-y-4">
+                <div class="flex justify-between font-medium">
+                    <span>Français : Courant</span>
+                    <span>Anglais : Très bon niveau</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="contact" class="bg-slate-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-8">Me contacter</h2>
+        <div class="flex flex-col md:flex-row justify-center gap-6 items-center mb-12">
+            <a href="mailto:sami.ounalli@gmail.com" class="bg-slate-800 p-4 rounded-xl border border-slate-700 flex items-center space-x-3 hover:text-indigo-400 transition">
+                <i data-lucide="mail"></i>
+                <span>sami.ounalli@gmail.com</span>
+            </a>
+            <div class="bg-slate-800 p-4 rounded-xl border border-slate-700 flex items-center space-x-3">
+                <i data-lucide="phone" class="text-emerald-400"></i>
+                <span>06 35 67 57 03</span>
+            </div>
+        </div>
+        <p class="text-slate-500 text-sm">© 2026 Sami Ounalli • Ingénieur Web Senior</p>
+    </div>
+</footer>
+
+<script>
+    lucide.createIcons();
+</script>
+</body>
+</html>
